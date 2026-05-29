@@ -65,9 +65,12 @@ A responsive, luxury spa-style website for Palufor Skin Clinic, showcasing servi
 
 | Device | Breakpoint | Screenshot |
 |--------|-----------|------------|
-| Desktop | 1200px+ | [Insert screenshot here] |
-| Tablet | 768px | [Insert screenshot here] |
-| Mobile | 375px | [Insert screenshot here] |
+| Desktop | 1200px+ | [<img width="1895" height="872" alt="Screenshot 2026-05-29 233933" src="https://github.com/user-attachments/assets/9770ddc3-3643-45ff-b704-af32c15a4f44" />
+ |
+| Tablet | 768px | [ |<img width="1895" height="886" alt="Screenshot 2026-05-29 233008" src="https://github.com/user-attachments/assets/eb99964b-a74d-42f0-b902-0eca84f09339" />
+
+| Mobile | 375px | [ |<img width="1898" height="872" alt="Screenshot 2026-05-29 233048" src="https://github.com/user-attachments/assets/31f093dd-9f87-41ef-a34f-1c01baa5c6eb" />
+
 
 ### How to Capture Screenshots:
 1. Open website in Chrome/Edge
