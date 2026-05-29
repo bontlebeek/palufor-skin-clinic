@@ -1,0 +1,95 @@
+# Palufor Skin Clinic Website
+
+## Project Overview
+A responsive, luxury spa-style website for Palufor Skin Clinic, showcasing services, contact information, and online enquiries. Designed with a light pink colour palette to evoke calm, elegance, and professional care.
+
+## Learning Outcomes Addressed (Part 2)
+- ✅ External CSS Style Sheet linked to all pages
+- ✅ Appropriate selectors (class, element, pseudo-classes)
+- ✅ Decorative, typographic, and layout styling for desktop
+- ✅ Cascading nature of CSS (variables, inheritance)
+- ✅ Browser developer tools used (screenshot evidence)
+- ✅ Responsive styling with relative units, media queries, breakpoints
+
+## Technologies Used
+- HTML5
+- CSS3 (Flexbox, Grid, Media Queries, CSS Variables)
+- Git & GitHub
+
+## Setup Instructions
+1. Clone the repository
+2. Open `index.html` in any modern browser
+3. Or visit the live site at: [GitHub Pages link if deployed]
+
+## Changelog
+
+### [Part 2] - 2026-05-29
+
+#### Fixes from Part 1 Feedback:
+- Created GitHub repository with multiple descriptive commits (12+ commits)
+- Added comprehensive README.md with project overview, setup instructions, and changelog
+- Implemented detailed changelog documenting all changes from feedback
+- Each commit uses descriptive messages (e.g., "Add CSS reset", "Implement responsive navigation")
+
+#### New CSS Features Added (Part 2):
+- **External CSS**: Created `css/style.css` linked to all HTML pages (`about.html`, `contact.html`, `enquiry.html`, `index.html`, `services.html`)
+- **CSS Reset**: Added reset at top of stylesheet for cross-browser consistency
+- **Typography System**: 
+  - Used `rem` units for font sizes (base 16px)
+  - Google Fonts-style system using Playfair Display (headings) and Montserrat (body)
+  - Typographic scale: 3.5rem (h1), 2.5rem (h2), 1.75rem (h3)
+- **Layout Techniques**:
+  - Desktop: Flexbox for navigation, CSS Grid for services layout
+  - Multi-column on large screens, single-column on mobile
+- **Visual Styling**:
+  - Luxury light pink colour palette (blush pink, dusty rose, soft gold)
+  - Hover effects on navigation (underline animation) and buttons (lift + shadow)
+  - Focus states for accessibility
+  - Card components with shadow on hover
+- **Responsive Design**:
+  - Breakpoints: 1024px (tablet), 768px (mobile), 480px (small mobile)
+  - Media queries adjust font sizes, layout, and spacing
+  - Navigation stacks vertically on mobile
+  - All spacing uses `rem` and `%` for relative scaling
+- **Form Styling**: Custom styled inputs with focus states for enquiry page
+- **Responsive Images**: `srcset` and `sizes` attributes ready for implementation
+
+### [Part 1] - 2026-04-21
+- Initial HTML structure created
+- Pages added: Home (index), About, Services, Contact, Enquiry
+- Basic navigation and footer structure
+
+## Screenshot Evidence
+
+*Take screenshots from browser dev tools device toolbar*
+
+| Device | Breakpoint | Screenshot |
+|--------|-----------|------------|
+| Desktop | 1200px+ | [Insert screenshot here] |
+| Tablet | 768px | [Insert screenshot here] |
+| Mobile | 375px | [Insert screenshot here] |
+
+### How to Capture Screenshots:
+1. Open website in Chrome/Edge
+2. Press F12 → Click Device Toolbar icon (📱)
+3. Select dimensions: 
+   - Desktop: Responsive mode at 1200px
+   - Tablet: iPad Mini (768px)
+   - Mobile: iPhone SE (375px)
+4. Capture full page using browser screenshot tool
+
+## Browser Developer Tools Used
+- Element inspection to test selectors
+- Device toolbar for responsive testing
+- Computed styles panel to verify CSS cascade
+- Console for debugging
+
+## References
+- MDN Web Docs - CSS Grid & Flexbox
+- CSS Tricks - A Complete Guide to Media Queries
+- Google Fonts - Playfair Display & Montserrat
+- Colour palette inspired by luxury spa aesthetics
+
+## Author
+**ST10537098 - Bontle Beek**
+GitHub: [bontlebeek](https://github.com/bontlebeek)
