@@ -3,23 +3,10 @@
 ## Project Overview
 A responsive, luxury spa-style website for Palufor Skin Clinic, showcasing services, contact information, and online enquiries. Designed with a light pink colour palette to evoke calm, elegance, and professional care.
 
-## Learning Outcomes Addressed (Part 2)
-- ✅ External CSS Style Sheet linked to all pages
-- ✅ Appropriate selectors (class, element, pseudo-classes)
-- ✅ Decorative, typographic, and layout styling for desktop
-- ✅ Cascading nature of CSS (variables, inheritance)
-- ✅ Browser developer tools used (screenshot evidence)
-- ✅ Responsive styling with relative units, media queries, breakpoints
-
 ## Technologies Used
 - HTML5
 - CSS3 (Flexbox, Grid, Media Queries, CSS Variables)
 - Git & GitHub
-
-## Setup Instructions
-1. Clone the repository
-2. Open `index.html` in any modern browser
-3. Or visit the live site at: [GitHub Pages link if deployed]
 
 ## Changelog
 
@@ -54,14 +41,7 @@ A responsive, luxury spa-style website for Palufor Skin Clinic, showcasing servi
 - **Form Styling**: Custom styled inputs with focus states for enquiry page
 - **Responsive Images**: `srcset` and `sizes` attributes ready for implementation
 
-### [Part 1] - 2026-04-21
-- Initial HTML structure created
-- Pages added: Home (index), About, Services, Contact, Enquiry
-- Basic navigation and footer structure
-
-## Screenshot Evidence
-
-*Take screenshots from browser dev tools device toolbar*
+## Screenshot Evidenc
 
 | Device | Breakpoint | Screenshot |
 |--------|-----------|------------|
@@ -69,17 +49,7 @@ A responsive, luxury spa-style website for Palufor Skin Clinic, showcasing servi
  |
 | Tablet | 768px | [ |<img width="1895" height="886" alt="Screenshot 2026-05-29 233008" src="https://github.com/user-attachments/assets/eb99964b-a74d-42f0-b902-0eca84f09339" />
 
-| Mobile | 375px | [ |<img width="1898" height="872" alt="Screenshot 2026-05-29 233048" src="https://github.com/user-attachments/assets/31f093dd-9f87-41ef-a34f-1c01baa5c6eb" />
-
-
-### How to Capture Screenshots:
-1. Open website in Chrome/Edge
-2. Press F12 → Click Device Toolbar icon (📱)
-3. Select dimensions: 
-   - Desktop: Responsive mode at 1200px
-   - Tablet: iPad Mini (768px)
-   - Mobile: iPhone SE (375px)
-4. Capture full page using browser screenshot tool
+| Mobile | 375px | [ |<img width="1898" height="872" alt="Screenshot 2026-05-29 233048" src="https://github.com/user-attachments/assets/31f093dd-9f87-41ef-a34f-1c01baa5c6eb"
 
 ## Browser Developer Tools Used
 - Element inspection to test selectors
