@@ -20,7 +20,7 @@ I worked on the project in three parts:
 2. **Part 2 – Visual design:** external CSS, responsive layouts and visual interaction states.
 3. **Part 3 – Functionality and SEO:** JavaScript interactions, dynamic services, forms, mapping, accessibility and search engine optimisation.
 
-The final website uses HTML5, CSS3 and normal JavaScript. I used Leaflet 1.9.4 and OpenStreetMap on the Contact page. I did not use a JavaScript framework or a build tool because the website does not need them.
+The final website uses HTML5, CSS3 and normal JavaScript. I used one embedded Google Map on the Contact page. I did not use a JavaScript framework or a build tool because the website does not need them.
 
 This README records what I completed from Part 1 up to Part 3.
 
@@ -68,7 +68,7 @@ There are no original number-based KPI targets in the files. If analytics is add
 - Treatment information accordion.
 - Enquiry guidance modal with focus control and Escape-key support.
 - Three-image gallery with a keyboard-friendly lightbox.
-- Leaflet map with OpenStreetMap tiles and a clinic marker.
+- One responsive Google Maps embed showing the provisional clinic area.
 - Client-side validation for both forms with field-level error messages.
 - Simulated enquiry submission without a page reload.
 - Encoded `mailto:` link generation for the contact form.
@@ -135,7 +135,7 @@ I kept the main files and the matching files in `part 2/` the same. I left `.git
 | Structure | HTML5 semantic elements and accessible attributes |
 | Styling | CSS3 custom properties, Grid, Flexbox, media queries and transitions |
 | Behaviour | Vanilla JavaScript and DOM APIs |
-| Map | Leaflet 1.9.4 with OpenStreetMap tiles |
+| Map | Responsive Google Maps iframe embed |
 | Images | Three local, lightweight SVG illustrations |
 | Version control | Git repository with descriptive commits |
 | Build process | None; the project runs as static files |
@@ -203,12 +203,11 @@ I also could not find an exact Part 2 feedback file. I worked on issues that I c
 - `createServiceCard()` creates service articles safely with DOM methods.
 - `initAccordions()` opens and closes treatment information panels.
 - `initModal()` and `initLightbox()` control dialogs, focus and keyboard closing.
-- `initMap()` creates the Leaflet map, OpenStreetMap tile layer and Rosebank marker.
 - `initEnquiryForm()` validates and simulates the service enquiry response.
 - `initContactForm()` validates and builds an encoded clinic email link.
 - `initScrollReveals()` uses Intersection Observer and respects reduced-motion settings.
 
-Leaflet is the only external JavaScript library in the project. I wrote the gallery lightbox, accordion, modal, service browser and form handling with normal JavaScript in the shared script file.
+The project no longer needs an external JavaScript library for the map because Google Maps is embedded with an iframe. I wrote the gallery lightbox, accordion, modal, service browser and form handling with normal JavaScript in the shared script file.
 
 #### SEO work
 
@@ -228,9 +227,8 @@ Technical and performance work includes:
 - Lazy loading for images below the first screen.
 - Explicit image dimensions to reduce layout shifts.
 - Lightweight local SVG assets instead of missing raster images.
-- Preconnect hints for the Leaflet CDN and OpenStreetMap tile server.
-- Subresource integrity and `crossorigin` attributes on Leaflet CDN files.
-- `rel="noopener"` on the OpenStreetMap link that opens in a new tab.
+- A preconnect hint for the Google Maps host.
+- Lazy loading for the Google Maps iframe.
 
 #### Form functionality
 
@@ -250,7 +248,7 @@ The site can be opened directly from `index.html`. A local server gives behaviou
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000` in a browser. An internet connection is required for Leaflet and the OpenStreetMap tiles on `contact.html`.
+Open `http://localhost:8000` in a browser. An internet connection is required for the Google Map on `contact.html`.
 
 ## Deployment Instructions
 
@@ -298,7 +296,8 @@ Open `http://localhost:8000` in a browser. An internet connection is required fo
 - **19 June 2026:** Added six JavaScript-driven service records with live search, category filtering and name/price sorting.
 - **19 June 2026:** Added a treatment accordion and enquiry guidance modal with keyboard controls.
 - **19 June 2026:** Implemented the gallery lightbox in vanilla JavaScript using the three local SVG images.
-- **19 June 2026:** Added Leaflet 1.9.4 and OpenStreetMap tiles to the Contact page with a provisional Rosebank marker.
+- **19 June 2026:** Added an interactive map to the Contact page with a provisional Rosebank location.
+- **19 June 2026:** Replaced the Leaflet map with one responsive Google Maps embed and removed the unused Leaflet code.
 - **19 June 2026:** Improved `enquiry.html` with all required fields, HTML constraints, JavaScript validation and a simulated response.
 - **19 June 2026:** Improved `contact.html` with field validation and a safely encoded `mailto:` link.
 - **19 June 2026:** Added unique metadata, internal links, improved headings, alternative text, `robots.txt` and `sitemap.xml`.
@@ -313,7 +312,9 @@ CSS-Tricks (2025) 'A complete guide to CSS media queries'. Available at: https:/
 
 Google (2026) *SEO starter guide*. Google Search Central. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide (Accessed: 19 June 2026).
 
-Leaflet (2024) *Leaflet 1.9.4 documentation*. Available at: https://leafletjs.com/reference.html (Accessed: 19 June 2026).
+Google (2026) *Embed a map: Maps Embed API*. Google for Developers. Available at: https://developers.google.com/maps/documentation/embed/embedding-map (Accessed: 19 June 2026).
+
+Leaflet (2024) *Leaflet 1.9.4 documentation*. Available at: https://leafletjs.com/reference.html (Accessed: 19 June 2026). Used for the earlier Part 3 map version recorded in the changelog.
 
 MDN Web Docs (2025a) *Client-side form validation*. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation (Accessed: 19 June 2026).
 
@@ -325,7 +326,7 @@ MDN Web Docs (2025d) *Responsive images*. Available at: https://developer.mozill
 
 OpenAI (2026) *Codex* [large language model]. Available at: https://openai.com/codex/ (Accessed: 19 June 2026).
 
-OpenStreetMap contributors (2026a) *OpenStreetMap*. Available at: https://www.openstreetmap.org/ (Accessed: 19 June 2026).
+OpenStreetMap contributors (2026a) *OpenStreetMap*. Available at: https://www.openstreetmap.org/ (Accessed: 19 June 2026). Used for the earlier Part 3 map version recorded in the changelog.
 
 OpenStreetMap contributors (2026b) *Copyright and licence*. Available at: https://www.openstreetmap.org/copyright (Accessed: 19 June 2026).
 

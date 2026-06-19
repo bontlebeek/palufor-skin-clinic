@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initAccordions();
   initModal();
   initLightbox();
-  initMap();
   initEnquiryForm();
   initContactForm();
   initScrollReveals();
@@ -147,18 +146,6 @@ function handleDialogKeys(event, dialog, returnFocus) {
   const last = controls[controls.length - 1];
   if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
   if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
-}
-
-function initMap() {
-  const mapElement = document.querySelector('#clinic-map');
-  if (!mapElement || typeof window.L === 'undefined') return;
-  const clinicCoordinates = [-26.1452, 28.0419];
-  const map = L.map(mapElement, { scrollWheelZoom: false }).setView(clinicCoordinates, 15);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>'
-  }).addTo(map);
-  L.marker(clinicCoordinates).addTo(map).bindPopup('<strong>Palufor Skin Clinic</strong><br>Provisional Rosebank location').openPopup();
 }
 
 function initEnquiryForm() {
