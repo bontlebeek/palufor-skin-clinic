@@ -4,7 +4,7 @@ A responsive marketing and enquiry website for Palufor Skin Clinic, a Johannesbu
 
 ## Student Information
 
-- **Student:** Bontle Beek
+- **Student:** Bontle Kole
 - **Student number:** ST10537098
 - **Module:** WEDE5020 – Web Development (Introduction)
 - **Assessment:** Three-part Portfolio of Evidence (PoE)
