@@ -12,21 +12,21 @@ A responsive marketing and enquiry website for Palufor Skin Clinic, a Johannesbu
 
 ## Project Overview
 
-Palufor Skin Clinic is a five-page static website for a small Johannesburg clinic. It introduces the clinic, explains its professional skincare and wellness services, helps visitors compare treatments and provides enquiry and contact options. The intended audience includes people looking for facial treatments, aesthetic skincare, grooming, massage therapy or a skin consultation.
+For this project, I built a five-page static website for Palufor Skin Clinic, a small clinic based in Johannesburg. The website introduces the clinic, explains the treatments and gives visitors ways to make an enquiry or contact the clinic. It is mainly aimed at people looking for facial treatments, skincare advice, grooming or massage therapy.
 
-The project was completed in three phases:
+I worked on the project in three parts:
 
 1. **Part 1 – Foundation:** five linked HTML pages and the main clinic content.
 2. **Part 2 – Visual design:** external CSS, responsive layouts and visual interaction states.
 3. **Part 3 – Functionality and SEO:** JavaScript interactions, dynamic services, forms, mapping, accessibility and search engine optimisation.
 
-The final site uses HTML5, CSS3 and vanilla JavaScript. Leaflet 1.9.4 and OpenStreetMap are used on the Contact page. No JavaScript framework, package manager, build tool or back-end service is required.
+The final website uses HTML5, CSS3 and normal JavaScript. I used Leaflet 1.9.4 and OpenStreetMap on the Contact page. I did not use a JavaScript framework or a build tool because the website does not need them.
 
-This README is the continuous record of the project across all three parts.
+This README records what I completed from Part 1 up to Part 3.
 
 ## Website Goals and Objectives
 
-No separate Website Project Proposal or approved KPI table is stored in the repository. The following goals are supported directly by the final page content and features:
+I could not find a separate Website Project Proposal or an approved KPI table in the repository. Based on the actual pages and features, the main goals of the website are to:
 
 - Introduce Palufor Skin Clinic and explain its Johannesburg-based storyline.
 - Present skincare, grooming and wellness services clearly.
@@ -36,7 +36,7 @@ No separate Website Project Proposal or approved KPI table is stored in the repo
 - Make the website usable on desktop, tablet and mobile screens.
 - Improve discoverability through on-page and technical SEO.
 
-No original numeric KPI targets can be verified from the project files. If the site is connected to analytics later, useful measurements would include service-card interactions, enquiry-form completions, contact-email link selections and visits to the Services and Enquiry pages. These are future measurement suggestions, not recorded Part 1 targets.
+There are no original number-based KPI targets in the files. If analytics is added later, I would measure completed enquiries, contact-email clicks and visits to the Services and Enquiry pages. These are only ideas for future measurement and were not recorded as Part 1 targets.
 
 ## Key Features and Functionality
 
@@ -126,7 +126,7 @@ palufor-skin-clinic/
     └── screenshots/               # Part 2 responsive evidence
 ```
 
-The main implementation files and their matching files in `part 2/` are synchronised. `.git/` and macOS metadata are not shown in the tree because they are not website source files.
+I kept the main files and the matching files in `part 2/` the same. I left `.git/` and macOS system files out of the diagram because they are not part of the website itself.
 
 ## Technical Requirements and Technology Stack
 
@@ -147,7 +147,7 @@ The `robots.txt` and `sitemap.xml` files currently use the expected GitHub Pages
 
 ## Timeline and Milestones
 
-The original proposal timeline and official PoE due dates are not present in the repository. The dates below come from the Git history and show the actual recorded development milestones.
+The original proposal timeline and official PoE due dates are not saved in the repository. I used the Git history for the dates below because those are the dates I could confirm.
 
 | Phase | Recorded date | Actual milestone |
 |---|---:|---|
@@ -155,7 +155,7 @@ The original proposal timeline and official PoE due dates are not present in the
 | Part 2 | 29 May 2026 | CSS work, README documentation and responsive screenshot evidence added |
 | Part 3 | 19 June 2026 | SEO, dynamic services, modal, accordion, lightbox, map, validation and deployment preparation completed |
 
-These are commit dates rather than confirmed institutional submission dates.
+These are Git commit dates, so they may not be the same as the official submission dates.
 
 ## Part-by-Part Details
 
@@ -163,37 +163,37 @@ These are commit dates rather than confirmed institutional submission dates.
 
 #### Organisation and storyline
 
-The chosen storyline is Palufor Skin Clinic, a small Johannesburg beauty and wellness clinic established in the site content as operating since 2014. The website focuses on professional but accessible skincare, facial treatments, grooming and relaxation services. A service business suits the five-page structure because visitors need to understand the clinic, compare services and contact the team.
+I chose Palufor Skin Clinic as the storyline. It is presented as a small Johannesburg beauty and wellness clinic that has operated since 2014. I focused on skincare, facial treatments, grooming and relaxation services. This worked well for a five-page website because visitors need to learn about the clinic, compare services and know how to contact it.
 
 #### Research and content approach
 
-No separate proposal, interview notes or research document is included in the repository. The clinic story and service information are written as project content. Operational details such as the street address, telephone numbers, email address, prices and treatment durations are clearly recorded as items that must be confirmed before production use.
+There is no separate proposal, interview document or research file in the repository. I wrote the clinic story and service information as project content. The address, phone numbers, email address, prices and treatment times still need to be confirmed before the site is used by a real business.
 
 #### HTML and navigation decisions
 
-The first version established Home, About, Services, Enquiry and Contact pages. Relative links were used so the project could run from a local folder or static host. The final HTML uses semantic landmarks, one main heading per page, labelled forms and shared navigation. CSS and JavaScript were separated into `css/` and `js/` from the start.
+In the first version, I created the Home, About, Services, Enquiry and Contact pages. I used relative links so that the website could work from a normal folder or a static host. I also kept the CSS and JavaScript in their own folders. In the final HTML, each page has one main heading, shared navigation and properly labelled forms.
 
 ### Part 2 – Designing the Visuals
 
 #### Feedback response
 
-The repository does not contain the lecturer's original Part 1 feedback. The Part 2 documentation records general improvements to repository documentation, stylesheet use and responsive testing. The specific changes are listed in the [Changelog](#changelog) without presenting unverified feedback as a direct lecturer quotation.
+I could not find the lecturer's original Part 1 feedback in the repository. The older Part 2 notes mention improvements to the README, stylesheet and responsive testing. I listed the changes I could confirm in the [Changelog](#changelog), but I did not present them as direct lecturer comments.
 
 #### CSS approach
 
-The final visual design uses a blush, rose, plum and cream palette to support the calm skincare theme. Georgia is used for headings, with Arial and Helvetica fallbacks for body content; no external font request is made. CSS custom properties keep colour and shadow values consistent.
+For the final design, I used blush, rose, plum and cream colours because they fit the calm skincare theme. The headings use Georgia and the body text uses Arial or Helvetica. I used CSS variables so that the colours and shadows could be changed in one place.
 
-Grid is used for multi-column cards, forms and main layouts. Flexbox is used where content needs to align in one row and wrap when space is limited. Buttons and navigation links use hover transitions, while `:focus-visible` provides a clear blue outline for keyboard users.
+I used Grid for the cards, forms and larger page layouts. I used Flexbox for the navigation, buttons and rows that need to wrap. Buttons and links have hover effects, and `:focus-visible` shows a clear outline for keyboard users.
 
 #### Responsive design
 
-The final stylesheet uses breakpoints at `760px` and `480px`. At tablet width, major two-column layouts become single columns and the navigation stacks. At small-phone width, cards, the gallery and form grids become single columns. Fluid sizes use `clamp()`, `rem`, percentages and `min()` rather than fixed desktop widths. Images have width and height attributes, use `max-width: 100%`, and below-the-fold images use native lazy loading.
+The final stylesheet has breakpoints at `760px` and `480px`. At tablet size, the main two-column layouts change to one column and the navigation stacks. On smaller phones, the cards, gallery and form grids also become one column. I used `clamp()`, `rem`, percentages and `min()` so that the sizes are not fixed only for desktop. Images also resize with the page and most images below the first section use lazy loading.
 
 ### Part 3 – Enhancing Functionality and SEO
 
 #### Part 2 feedback response
 
-No exact Part 2 lecturer feedback file was found. The work therefore addressed observable issues in the existing project: inconsistent page structure, limited CSS, missing images, inactive JavaScript, basic form layouts and no technical SEO files. See the [Part 3 changelog](#part-3-includes-part-2-feedback-improvements) for the individual changes.
+I also could not find an exact Part 2 feedback file. I worked on issues that I could see in the project, such as inconsistent headings, missing images, limited CSS, an almost empty JavaScript file, basic forms and missing SEO files. The individual changes are in the [Part 3 changelog](#part-3-includes-part-2-feedback-improvements).
 
 #### JavaScript functionality
 
@@ -208,7 +208,7 @@ No exact Part 2 lecturer feedback file was found. The work therefore addressed o
 - `initContactForm()` validates and builds an encoded clinic email link.
 - `initScrollReveals()` uses Intersection Observer and respects reduced-motion settings.
 
-Leaflet is the only external JavaScript library. The gallery lightbox, accordion, modal, service browser and form handling use original vanilla JavaScript in the shared script file.
+Leaflet is the only external JavaScript library in the project. I wrote the gallery lightbox, accordion, modal, service browser and form handling with normal JavaScript in the shared script file.
 
 #### SEO work
 
@@ -240,7 +240,7 @@ Technical and performance work includes:
 
 #### Deployment status
 
-The project is ready for static deployment and `index.html` is the entry point. Instructions are provided below for GitHub Pages and Netlify. The repository does not contain evidence of a completed deployment, so there is no verified live URL and no claim that hosted pages have been tested. Local structural checks confirm that page links, assets, metadata, JavaScript syntax and image alternatives are present.
+The project is ready to be deployed as a static website, with `index.html` as the starting page. I included instructions for GitHub Pages and Netlify below. I have not found proof of a completed deployment in the repository, so I cannot provide a confirmed live link. I checked the local files for broken links, missing assets, metadata, JavaScript syntax and image alternative text.
 
 ## Running the Website Locally
 
@@ -335,8 +335,8 @@ The three SVG illustrations in `images/` were created locally for this project. 
 
 ### AI use disclosure
 
-Generative assistance was used during Part 3 to review and improve code, synchronise files, test project structure and revise documentation (OpenAI, 2026). An AI Disclosure Annexe with the required prompts and screen captures must accompany the PoE submission according to The IIE assessment requirements. The annexe is a separate submission document and is not included in this repository.
+I used generative assistance during Part 3 to help review code, keep duplicate files in sync, check the project structure and improve the documentation (OpenAI, 2026). I still reviewed the files and made sure the README matches what is in the project. An AI Disclosure Annexe with the prompts and screen captures must be submitted separately with the PoE, as required by The IIE.
 
 ## Credits and Acknowledgements
 
-No peer, instructor or external contributor acknowledgement is recorded in the repository. Any assistance received outside the Git history should be added here before submission.
+I did not find any peer or instructor acknowledgements in the repository. I will add them here before submission if any other assistance needs to be declared.
