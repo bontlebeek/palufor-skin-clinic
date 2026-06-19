@@ -234,7 +234,7 @@ Technical and performance work includes:
 
 `enquiry.html` collects a visitor's name, email, phone number, enquiry type, preferred service, preferred date, budget range and message. HTML attributes provide required, length, type and phone-pattern rules. JavaScript displays field-level messages and a simulated availability response without reloading. Its `action="#"` confirms that it is a front-end prototype; no data is transmitted or stored.
 
-`contact.html` collects a name, email, optional phone number, message type, subject and full message. After validation, JavaScript safely encodes the information into a `mailto:` link for `info@paluforskinclinic.co.za`. The visitor must select the link and send the message from their own email application.
+`contact.html` collects a name, email, optional phone number, message type, subject and full message. After validation, JavaScript safely encodes the information into a `mailto:` link for `bookings@paluforskinclinic.co.za`. The visitor must select the link and send the message from their own email application.
 
 #### Deployment status
 
@@ -313,6 +313,7 @@ https://palufor-skin-clinic.vercel.app/
 - **19 June 2026:** Updated `robots.txt` and `sitemap.xml` to use the live Vercel URL.
 - **19 June 2026:** Synchronised the root implementation with the `part 2/` submission copy.
 - **19 June 2026:** Rewrote the README as a continuous Part 1–3 project record with factual limitations clearly stated.
+- **19 June 2026:** Standardised the website contact details with a Johannesburg `+27 11` telephone number, `.co.za` booking email and full Rosebank postal address.
 
 ## References
 

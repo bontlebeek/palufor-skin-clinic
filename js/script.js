@@ -182,7 +182,7 @@ function initContactForm() {
     const values = new FormData(form);
     const subject = `[${values.get('message_type')}] ${values.get('subject')}`;
     const body = `Name: ${values.get('full_name')}\nEmail: ${values.get('email')}\nPhone: ${values.get('phone') || 'Not provided'}\n\n${values.get('message')}`;
-    const mailto = `mailto:info@paluforskinclinic.co.za?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:bookings@paluforskinclinic.co.za?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     const response = form.querySelector('#contact-response');
     response.replaceChildren(document.createTextNode('Your message is ready. '));
     const link = document.createElement('a');
