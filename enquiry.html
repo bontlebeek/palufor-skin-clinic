@@ -1,113 +1,32 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palufor Skin Clinic | Enquiry</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- Header and common navigation -->
-    <header>
-      <h1>PALUFOR SKIN CLINIC</h1>
-      <p>Service and booking interest enquiries.</p>
-
-      <nav aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="enquiry.html">Enquiry</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <!-- Enquiry page explanation -->
-      <section>
-        <h2>Send a Service Enquiry</h2>
-        <p>
-          Use this form to enquire about consultations, treatment combinations, specific services, or product
-          availability. Our team will review your message and contact you with next steps.
-        </p>
-        <p>
-          Please note: online booking confirmation is provided only after your enquiry has been reviewed by the clinic.
-        </p>
-      </section>
-
-      <!-- Basic enquiry form for Part 1 -->
-      <section>
-        <h2>Enquiry Form</h2>
-        <form action="#" method="post">
-          <p>
-            <label for="full-name">Full name</label><br />
-            <input type="text" id="full-name" name="full_name" required />
-          </p>
-
-          <p>
-            <label for="email">Email address</label><br />
-            <input type="email" id="email" name="email" required />
-          </p>
-
-          <p>
-            <label for="phone">Phone number</label><br />
-            <input type="tel" id="phone" name="phone" required />
-          </p>
-
-          <p>
-            <label for="enquiry-type">Enquiry type</label><br />
-            <select id="enquiry-type" name="enquiry_type" required>
-              <option value="">Select an option</option>
-              <option value="consultation">Consultation</option>
-              <option value="facial">Facial</option>
-              <option value="waxing">Waxing</option>
-              <option value="pedicure">Pedicure</option>
-              <option value="massage">Massage</option>
-              <option value="product">Product</option>
-              <option value="other">Other</option>
-            </select>
-          </p>
-
-          <p>
-            <label for="appointment-date">Preferred appointment date</label><br />
-            <input type="date" id="appointment-date" name="preferred_date" />
-          </p>
-
-          <fieldset>
-            <legend>Preferred contact method</legend>
-            <label><input type="radio" name="contact_method" value="phone" required /> Phone</label>
-            <label><input type="radio" name="contact_method" value="email" /> Email</label>
-            <label><input type="radio" name="contact_method" value="whatsapp" /> WhatsApp</label>
-          </fieldset>
-
-          <p>
-            <label for="message">Message</label><br />
-            <textarea id="message" name="message" rows="6" cols="40" required></textarea>
-          </p>
-
-          <p>
-            <button type="submit">Submit Enquiry</button>
-          </p>
-        </form>
-      </section>
-    </main>
-
-    <!-- Footer with key details -->
-    <footer>
-      <p><strong>Palufor Skin Clinic</strong></p>
-      <p>Johannesburg, South Africa</p>
-      <p>Phone: +27 10 555 0123 | Email: info@paluforskinclinic.co.za</p>
-      <p>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="services.html">Services</a> |
-        <a href="enquiry.html">Enquiry</a> |
-        <a href="contact.html">Contact</a>
-      </p>
-      <p>&copy; 2026 Palufor Skin Clinic. All rights reserved.</p>
-    </footer>
-
-    <script src="js/script.js"></script>
-  </body>
-</html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Send a skincare treatment or consultation enquiry to Palufor Skin Clinic and receive personalised next-step guidance.">
+  <meta name="keywords" content="skin consultation, skincare treatments, facial treatments, Palufor Skin Clinic enquiry, professional skincare">
+  <meta name="theme-color" content="#713f52"><title>Skin Consultation Enquiry | Palufor Skin Clinic</title>
+  <link rel="stylesheet" href="css/style.css"><script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="index.html" aria-label="Palufor Skin Clinic home">Palufor <span>Skin Clinic</span></a><nav aria-label="Main navigation"><ul>
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="enquiry.html" aria-current="page">Enquiry</a></li><li><a href="contact.html">Contact</a></li>
+  </ul></nav></div></header>
+  <main id="main-content">
+    <section class="page-hero"><p class="eyebrow">Treatment enquiries</p><h1>Tell us how we can support your skin</h1><p>Share your goals and preferred timing. This form requests guidance and does not confirm an appointment.</p></section>
+    <section class="section form-section"><div><h2>Service enquiry form</h2><p>Required fields are marked with <span aria-hidden="true">*</span>.</p>
+      <form id="enquiry-form" action="#" method="post" novalidate>
+        <div class="form-grid"><div class="field"><label for="full-name">Full name *</label><input id="full-name" name="full_name" type="text" autocomplete="name" minlength="2" required><span class="error" id="full-name-error"></span></div>
+        <div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" required><span class="error" id="email-error"></span></div>
+        <div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" pattern="[+0-9 ()-]{10,20}" required><span class="error" id="phone-error"></span></div>
+        <div class="field"><label for="enquiry-type">Enquiry type *</label><select id="enquiry-type" name="enquiry_type" required><option value="">Choose an enquiry type</option><option>New consultation</option><option>Existing client follow-up</option><option>Service availability</option><option>Product availability</option></select><span class="error" id="enquiry-type-error"></span></div>
+        <div class="field"><label for="preferred-service">Preferred service *</label><select id="preferred-service" name="preferred_service" required><option value="">Choose a service</option><option>Skin consultation</option><option>Hydration facial</option><option>Clarifying facial</option><option>Waxing</option><option>Pedicure</option><option>Massage therapy</option><option>Not sure — please advise</option></select><span class="error" id="preferred-service-error"></span></div>
+        <div class="field"><label for="preferred-date">Preferred date *</label><input id="preferred-date" name="preferred_date" type="date" required><span class="error" id="preferred-date-error"></span></div>
+        <div class="field"><label for="budget">Budget range</label><select id="budget" name="budget"><option value="">Prefer not to say</option><option>Under R200</option><option>R200–R400</option><option>R401–R600</option><option>R600+</option></select></div></div>
+        <div class="field"><label for="message">Your goals or questions *</label><textarea id="message" name="message" rows="6" minlength="10" maxlength="800" required></textarea><span class="field-hint">10–800 characters</span><span class="error" id="message-error"></span></div>
+        <button class="button" type="submit">Send enquiry</button><div id="enquiry-response" class="form-response" role="status" tabindex="-1" hidden></div>
+      </form>
+    </div><aside class="form-aside"><h2>What happens next?</h2><ol><li>We review your goals and service choice.</li><li>We check estimated availability around your preferred date.</li><li>We contact you to confirm the appropriate next step.</li></ol><p>Need general help instead? <a href="contact.html">Contact the clinic</a>.</p></aside></section>
+  </main>
+  <footer><div class="footer-inner"><div><strong>Palufor Skin Clinic</strong><p>Johannesburg, South Africa</p></div><div><a href="services.html">Treatments</a><a href="enquiry.html">Book an enquiry</a><a href="contact.html">Contact us</a></div><p>&copy; <span data-current-year>2026</span> Palufor Skin Clinic.</p></div></footer>
+</body></html>
