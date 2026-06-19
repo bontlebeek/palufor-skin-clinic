@@ -49,7 +49,7 @@ Technical SEO additions include:
 - Responsive dimensions on images to reduce layout shift.
 - `rel="noopener"` on the OpenStreetMap attribution link opened in a new tab.
 
-The sitemap currently targets the repository's `part 2` subfolder using URL-safe `%20` encoding. It should be updated if this folder is deployed as the site root, or if the final deployment uses a custom domain or Netlify URL.
+The sitemap uses the expected GitHub Pages URL. It should be updated if the final deployment uses a custom domain or Netlify URL.
 
 ## Form Validation and Responses
 
@@ -85,8 +85,6 @@ palufor-skin-clinic/
 ├── js/script.js
 └── images/*.svg
 ```
-
-The original Part 2 evidence images are preserved in `screenshots/`.
 
 ## Running Locally
 

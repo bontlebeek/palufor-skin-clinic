@@ -256,4 +256,3 @@ function initScrollReveals() {
   }, { threshold: 0.08 });
   sections.forEach((section) => observer.observe(section));
 }
-
