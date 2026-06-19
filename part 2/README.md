@@ -2,73 +2,108 @@
 
 ## Project Overview
 
-Palufor Skin Clinic is a responsive static website for a Johannesburg beauty and wellness clinic. It introduces the clinic, presents professional skincare and facial treatments, lets visitors search and compare services, and provides front-end enquiry and contact processes.
+This project is a static website for Palufor Skin Clinic, a small beauty and wellness clinic based in Johannesburg. The website gives visitors information about the clinic, its skincare treatments, prices, contact details and business hours. Visitors can also search through services and complete an enquiry or contact form.
 
-The site uses plain HTML5, CSS3 and JavaScript so it can be inspected easily and hosted without a server-side application.
+The website was built with HTML, CSS and JavaScript. I kept the code simple so that it is easy to read, maintain and inspect.
 
-## Part 3 Summary: Enhancing Functionality and SEO
+## Part 3: Enhancing Functionality and SEO
 
-Part 3 extends the existing five-page site without replacing its original clinic storyline. The work adds dynamic service discovery, accessible interactive components, map integration, form validation, technical SEO, stronger page content and a complete responsive visual system.
+For Part 3, I improved the website instead of starting the project again. I kept the original Palufor Skin Clinic content and added more interactive features, form validation, responsive styling and search engine optimisation.
 
-## Features Implemented
+## Features Added
 
-- Responsive global navigation with a visible current-page state and skip links.
-- JavaScript service catalogue with name, category, description, price and duration.
-- Live service search, category filtering, name/price sorting and result counts.
-- Expandable treatment guide using accessible accordion controls.
-- Booking guidance modal with focus handling and Escape-key support.
-- Three-image gallery with a keyboard-accessible lightbox.
-- Leaflet map using OpenStreetMap tiles and a clinic marker.
-- CSS transitions, scroll reveals and `prefers-reduced-motion` support.
-- Dynamic copyright year and personalised form response content.
-- Local SVG illustrations to prevent broken image requests and keep page weight low.
+- Consistent navigation and footer links on all five pages.
+- A dynamic service list created from JavaScript data.
+- Search, category filters and price or name sorting on the Services page.
+- An accordion containing extra treatment information.
+- A pop-up explaining how the enquiry process works.
+- An image gallery with a lightbox preview.
+- A Leaflet map using OpenStreetMap tiles.
+- JavaScript validation for the enquiry and contact forms.
+- Clear success messages after valid form submissions.
+- Simple transitions and scroll animations.
+- Responsive layouts for desktop, tablet and mobile screens.
+- Reduced-motion support for visitors who prefer fewer animations.
 
 ## Part 2 Feedback Improvements
 
-The exact Part 2 lecturer feedback was not stored in the repository, so the following practical improvements address common quality and assessment concerns:
+The exact lecturer feedback from Part 2 was not included in the project folder. I therefore focused on realistic areas that needed improvement:
 
-- **Navigation consistency:** Standardised the header, navigation order, active-page indicator and footer links on every page.
-- **Clearer page structure:** Gave each page one descriptive `h1`, followed by logical `h2` and `h3` content sections.
-- **Accessibility:** Added a skip link, visible focus styles, semantic labels, live status messages, keyboard-friendly dialogs and reduced-motion support.
-- **Improved form layout:** Replaced paragraph-based fields with responsive, labelled form grids and field-level validation messages.
-- **Better image alternatives:** Added descriptive `alt` text to meaningful images and accessible names to gallery controls.
-- **Mobile responsiveness:** Added fluid type, flexible grids and focused breakpoints for tablets and small phones.
-- **Content clarity:** Rewrote headings and calls to action around skincare goals, treatment guidance and clear next steps.
-- **Working presentation layer:** Rebuilt the previously empty `css/style.css` and added the JavaScript behaviour required by Part 3.
+- **Navigation consistency:** I used the same navigation order, active-page style and footer links throughout the website.
+- **Page structure:** Each page now has one main heading followed by correctly ordered subheadings.
+- **Accessibility:** I added skip links, visible keyboard focus, form labels, live status messages and keyboard controls for the modal and lightbox.
+- **Form layout:** I changed the forms into responsive grids and placed error messages next to the correct fields.
+- **Image descriptions:** Every meaningful image has descriptive alternative text.
+- **Mobile responsiveness:** The card layouts, forms, navigation and gallery adjust for tablets and smaller phones.
+- **Content clarity:** I improved headings, treatment descriptions and calls to action so that visitors know what to do next.
+- **CSS and JavaScript:** I completed the previously limited stylesheet and added the JavaScript needed for Part 3 functionality.
+
+## Interactive Services
+
+The Services page loads the treatment cards from an array in `js/script.js`. Each service contains a name, category, description, starting price and estimated duration. The page updates the cards when a visitor searches, selects a category or changes the sorting option.
+
+I also added an accordion, an enquiry guidance modal and a gallery lightbox. The modal and lightbox can be closed with their close buttons, by selecting the background or by pressing the Escape key.
+
+## Interactive Map
+
+The Contact page uses Leaflet and OpenStreetMap to display a map of the clinic area. A marker identifies the provisional Palufor Skin Clinic location in Rosebank, Johannesburg. The map is responsive and can be used with keyboard focus.
+
+## Form Validation
+
+### Enquiry form
+
+The enquiry form asks for:
+
+- Full name
+- Email address
+- Phone number
+- Enquiry type
+- Preferred service
+- Preferred date
+- Budget range
+- Message
+
+HTML validation attributes and JavaScript are used together. Invalid fields show a clear message. A successful submission does not reload the page and displays an estimated next step.
+
+This is only a front-end prototype. The form uses `action="#"`, and no personal information is sent to a database or server.
+
+### Contact form
+
+The contact form includes full name, email, phone number, message type, subject and a full message. After validation, JavaScript creates a `mailto:` link containing the visitor's message. The visitor must open the link and send the email using their own email application.
 
 ## SEO Improvements
 
-Every HTML page now has a unique title, meta description and keyword set. Content includes natural references to skin clinic services, skincare treatments, facial treatments, aesthetic skincare, skin consultations, beauty and wellness and professional skincare. Internal links connect related services, enquiry and contact tasks.
+I added the following SEO improvements:
 
-Technical SEO additions include:
+- A different title and meta description for every page.
+- Meta keywords related to skincare treatments and beauty services.
+- One clear `h1` heading on each page.
+- Logical `h2` and `h3` heading structure.
+- Internal links between services, enquiries and contact information.
+- Descriptive alternative text for images.
+- Relevant content about facial treatments, aesthetic skincare, skin consultations, beauty and wellness and professional skincare.
+- A `robots.txt` file and XML sitemap.
+- Deferred JavaScript and lazy loading for images below the first screen.
+- Image dimensions to reduce layout movement while pages load.
 
-- `robots.txt` with crawler instructions and a sitemap location.
-- `sitemap.xml` covering all five public pages.
-- Semantic HTML landmarks and consistent heading order.
-- Lightweight local SVG artwork, deferred JavaScript and lazy-loaded below-the-fold images.
-- Responsive dimensions on images to reduce layout shift.
-- `rel="noopener"` on the OpenStreetMap attribution link opened in a new tab.
+The sitemap currently uses the expected GitHub Pages address. It must be updated if the project is deployed with a different address or custom domain.
 
-The sitemap uses the expected GitHub Pages URL. It should be updated if the final deployment uses a custom domain or Netlify URL.
+## Security and Accessibility
 
-## Form Validation and Responses
+- External links that open in a new tab use `rel="noopener"`.
+- Form values placed into the page are escaped or added using safe DOM methods.
+- Inputs have matching labels and visible error messages.
+- The modal and lightbox return keyboard focus to the button that opened them.
+- A reduced-motion media query disables unnecessary animation when requested by the user's device.
 
-### Service enquiry form
+## Placeholder Information
 
-The enquiry form collects full name, email, phone number, enquiry type, preferred service, preferred date, optional budget and a message. HTML attributes provide the validation rules, while JavaScript provides readable field-level messages. The preferred date cannot be earlier than the current date. A valid submission is handled without a reload and displays estimated next-step guidance.
+The following information must be confirmed before the site is used as a production website:
 
-This is a front-end prototype: `action="#"` is intentional, and no personal information is transmitted or stored.
-
-### General contact form
-
-The contact form collects full name, email, optional phone number, message type, subject and full message. After validation, JavaScript safely encodes the content into a `mailto:` link for `info@paluforskinclinic.co.za`. The visitor must choose the generated link and send the message from their own email application.
-
-## Placeholder Details
-
-- `125 Wellness Avenue, Rosebank` and its Rosebank map coordinates are realistic placeholders. Replace the written address and `clinicCoordinates` in `js/script.js` when the exact clinic location is confirmed.
-- The phone numbers and `info@paluforskinclinic.co.za` should be confirmed before production use.
-- The local SVG gallery artwork is an accessible, lightweight placeholder for approved clinic photography.
-- Service prices and durations are guide values and should be confirmed by the clinic.
+- `125 Wellness Avenue, Rosebank` and the map coordinates are placeholders.
+- The clinic phone numbers and `info@paluforskinclinic.co.za` must be confirmed.
+- Prices and treatment durations are guide values.
+- The SVG gallery images are lightweight placeholders for approved clinic photographs.
 
 ## Project Structure
 
@@ -81,77 +116,92 @@ palufor-skin-clinic/
 ├── contact.html
 ├── robots.txt
 ├── sitemap.xml
-├── css/style.css
-├── js/script.js
-└── images/*.svg
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+└── images/
+    ├── clinic-care.svg
+    ├── consultation.svg
+    └── wellness-space.svg
 ```
 
-## Running Locally
+## Running the Website Locally
 
-No build step is required. Open `index.html` directly, or run a simple local server from the project directory:
+The website does not need a build process. It can be opened by selecting `index.html`, although a local server is recommended:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`. An internet connection is needed for Leaflet and OpenStreetMap tiles on the contact page.
+The website can then be viewed at `http://localhost:8000`. An internet connection is needed to load Leaflet and the OpenStreetMap tiles.
 
 ## Deployment
 
 ### GitHub Pages
 
 1. Push the repository to GitHub.
-2. Open **Settings → Pages** in the repository.
-3. Select **Deploy from a branch**.
-4. Choose the `main` branch and `/ (root)`, then save.
-5. Confirm the published URL and update `sitemap.xml` and `robots.txt` if it differs from the current URL.
+2. Open the repository's **Settings** page.
+3. Select **Pages**.
+4. Choose **Deploy from a branch**.
+5. Select the `main` branch and `/ (root)` folder.
+6. Save the settings and wait for the published link.
 
 ### Netlify
 
-1. In Netlify, choose **Add new site → Import an existing project**.
-2. Connect the GitHub repository.
-3. Leave the build command empty and set the publish directory to `.`.
-4. Deploy, then update the sitemap and robots URL to the Netlify or custom domain.
+1. Select **Add new site** in Netlify.
+2. Import the GitHub repository.
+3. Leave the build command empty.
+4. Set the publish directory to `.`.
+5. Deploy the site.
 
-## Detailed Changelog
+The sitemap and `robots.txt` URL must be changed if the final deployment address is different.
 
-### Part 3 — 2026-06-19
+## Changelog
 
-- Updated `index.html` with unique metadata, a focused home-page `h1`, semantic hero content, internal links and accessible local artwork.
-- Updated `about.html` with unique metadata, clearer clinic story, mission, vision, values and responsive content structure.
-- Rebuilt `services.html` with an accordion, service controls, dynamic result region, enquiry guidance modal and gallery lightbox markup.
-- Rebuilt `enquiry.html` with all requested fields, HTML5 constraints, field errors, service query support and simulated submission feedback.
-- Rebuilt `contact.html` with validated contact fields, a mailto workflow, business information and a responsive Leaflet map region.
-- Rebuilt `css/style.css` with a responsive design system, layouts, forms, cards, dialogs, gallery, map styling, transitions and accessible focus/reduced-motion states.
-- Implemented `js/script.js` for DOM-rendered services, search, filter, sort, accordions, modal, lightbox, map, both form workflows and dynamic UI updates.
-- Added `images/clinic-care.svg`, `images/wellness-space.svg` and `images/consultation.svg` as local lightweight gallery and page assets.
-- Added `robots.txt` and `sitemap.xml` for technical SEO and deployment readiness.
-- Replaced missing image references and removed the risk of broken hero/gallery images.
-- Expanded this README with feedback improvements, implementation details, placeholders, deployment steps, references and reflection.
+### Part 3 — 19 June 2026
 
-### Part 2 — 2026-05-29
+- Updated all five HTML pages with unique SEO information and improved heading structures.
+- Added consistent headers, navigation, footers and internal links.
+- Rebuilt the main CSS file with responsive layouts, form styling and accessibility states.
+- Added the JavaScript service list, search, filtering and sorting.
+- Added the treatment accordion and enquiry guidance modal.
+- Added a gallery and keyboard-friendly lightbox.
+- Added the Leaflet and OpenStreetMap contact map.
+- Improved the enquiry form with all required fields, validation and a simulated response.
+- Improved the contact form with validation and a generated email link.
+- Added three local SVG images with alternative text.
+- Added `robots.txt` and `sitemap.xml`.
+- Added deployment instructions, placeholder notes and references to this README.
+- Kept the main project and the `part 2` copy synchronised.
 
-- Added the initial five-page HTML structure and external CSS link.
-- Established the clinic content, services, forms and shared navigation.
-- Documented responsive testing intentions and the project colour direction.
+### Part 2 — 29 May 2026
+
+- Created the original five-page website structure.
+- Added the first version of the navigation, clinic content, services and forms.
+- Linked the pages to an external stylesheet.
+- Tested the layout at desktop, tablet and mobile sizes.
 
 ## Reflection
 
-For Part 3, I focused on turning the original informational website into a useful visitor experience while keeping the code understandable. I improved consistency across every page, made treatment information easier to search and compare, and added clear feedback to both forms. I also paid closer attention to keyboard access, reduced motion, mobile layouts and page structure instead of treating accessibility and SEO as separate finishing tasks.
+In this part of the project, I learned how JavaScript can make a static website more useful. The service cards are created from data instead of being repeated in the HTML, which made the search, filter and sorting features easier to manage. I also learned how to use DOM manipulation to update results and form messages without reloading the page.
 
-The map, lightbox, modal and dynamic service list helped me practise DOM manipulation in practical contexts. I kept submission behaviour transparent because this remains a static prototype: the enquiry form simulates a response, while the contact form lets the visitor review and send a compiled email through their own application.
+Accessibility was an important improvement for me. I added keyboard controls, focus styles, useful labels and reduced-motion support. I also improved the heading structure and page descriptions so that the website is clearer for visitors and search engines.
+
+The forms are still prototypes because there is no back-end server. I made this clear to the visitor and used a simulated enquiry response and a contact email link instead of pretending that information had been submitted online.
 
 ## References
 
-- Leaflet. (2026). *Leaflet: an open-source JavaScript library for interactive maps*. https://leafletjs.com/
-- OpenStreetMap contributors. (2026). *OpenStreetMap*. https://www.openstreetmap.org/ and https://www.openstreetmap.org/copyright
+- Leaflet. (2026). *Leaflet: An open-source JavaScript library for interactive maps*. https://leafletjs.com/
+- OpenStreetMap contributors. (2026). *OpenStreetMap*. https://www.openstreetmap.org/
+- OpenStreetMap contributors. (2026). *Copyright and licence*. https://www.openstreetmap.org/copyright
 - MDN Web Docs. (2026). *Client-side form validation*. https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation
 - MDN Web Docs. (2026). *Document Object Model (DOM)*. https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
 - MDN Web Docs. (2026). *Responsive images*. https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/Multimedia
-- W3C Web Accessibility Initiative. (2026). *Web Content Accessibility Guidelines (WCAG) Overview*. https://www.w3.org/WAI/standards-guidelines/wcag/
-- Google Search Central. (2026). *SEO Starter Guide*. https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+- W3C Web Accessibility Initiative. (2026). *WCAG overview*. https://www.w3.org/WAI/standards-guidelines/wcag/
+- Google Search Central. (2026). *SEO starter guide*. https://developers.google.com/search/docs/fundamentals/seo-starter-guide
 
-All artwork in `images/` was created locally for this project and has no external image licensing dependency.
+The SVG images in the `images` folder were created locally for this project and do not require an external image licence.
 
 ## Author
 
