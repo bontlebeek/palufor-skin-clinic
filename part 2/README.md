@@ -139,11 +139,11 @@ I kept the main files and the matching files in `part 2/` the same. I left `.git
 | Images | Three local, lightweight SVG illustrations |
 | Version control | Git repository with descriptive commits |
 | Build process | None; the project runs as static files |
-| Hosting preparation | GitHub Pages or Netlify |
-| Current deployment | Not deployed from this repository |
-| Live URL | No verified live URL is recorded |
+| Hosting preparation | GitHub Pages, Netlify or Vercel |
+| Current deployment | Vercel |
+| Live URL | https://palufor-skin-clinic.vercel.app/ |
 
-The `robots.txt` and `sitemap.xml` files currently use the expected GitHub Pages address, `https://bontlebeek.github.io/palufor-skin-clinic/`. That address must be checked and updated after deployment if the published URL differs.
+The `robots.txt` and `sitemap.xml` files use the verified Vercel address, `https://palufor-skin-clinic.vercel.app/`.
 
 ## Timeline and Milestones
 
@@ -238,7 +238,7 @@ Technical and performance work includes:
 
 #### Deployment status
 
-The project is ready to be deployed as a static website, with `index.html` as the starting page. I included instructions for GitHub Pages and Netlify below. I have not found proof of a completed deployment in the repository, so I cannot provide a confirmed live link. I checked the local files for broken links, missing assets, metadata, JavaScript syntax and image alternative text.
+The project is deployed as a static website on Vercel, with `index.html` as the starting page. The live site is available at https://palufor-skin-clinic.vercel.app/. I checked all five public pages, the stylesheet, JavaScript, SEO files and image assets after deployment, and they returned successful responses. The deployed Contact page also contains the new Google Maps embed.
 
 ## Running the Website Locally
 
@@ -269,6 +269,12 @@ Open `http://localhost:8000` in a browser. An internet connection is required fo
 4. Set the publish directory to `.`.
 5. Deploy and test every page.
 6. Update the sitemap and robots URL to the Netlify or custom domain.
+
+### Current Vercel deployment
+
+The GitHub repository is connected to Vercel and changes pushed to `main` are deployed automatically. The current public website is:
+
+https://palufor-skin-clinic.vercel.app/
 
 ## Changelog
 
@@ -302,7 +308,9 @@ Open `http://localhost:8000` in a browser. An internet connection is required fo
 - **19 June 2026:** Improved `contact.html` with field validation and a safely encoded `mailto:` link.
 - **19 June 2026:** Added unique metadata, internal links, improved headings, alternative text, `robots.txt` and `sitemap.xml`.
 - **19 June 2026:** Added deferred scripts, lazy loading, explicit image dimensions, reduced-motion support and secure external-link handling.
-- **19 June 2026:** Added GitHub Pages and Netlify preparation instructions; no deployment was completed.
+- **19 June 2026:** Added GitHub Pages and Netlify preparation instructions.
+- **19 June 2026:** Deployed the static website to Vercel and verified all five pages and required assets.
+- **19 June 2026:** Updated `robots.txt` and `sitemap.xml` to use the live Vercel URL.
 - **19 June 2026:** Synchronised the root implementation with the `part 2/` submission copy.
 - **19 June 2026:** Rewrote the README as a continuous Part 1–3 project record with factual limitations clearly stated.
 

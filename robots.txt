@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bontlebeek.github.io/palufor-skin-clinic/sitemap.xml
+Sitemap: https://palufor-skin-clinic.vercel.app/sitemap.xml
